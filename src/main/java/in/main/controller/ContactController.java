@@ -11,8 +11,11 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/contacts")
-@CrossOrigin(origins = "http://localhost:4200")
+@RequestMapping("/contacts")
+@CrossOrigin(origins = {
+	    "http://localhost:4200",
+	    "https://hotelbookingbyadinath.netlify.app"
+	})
 public class ContactController {
 
     @Autowired
